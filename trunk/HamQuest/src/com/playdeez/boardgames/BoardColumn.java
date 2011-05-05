@@ -6,6 +6,15 @@ import java.util.List;
 public class BoardColumn<T extends IBoardCellContents> {
 	private Integer column;
 	private List<BoardCell<T>> cells;
+	public Integer getColumn(){
+		return column;
+	}
+	public void putColumn(Integer theColumn){
+		column = theColumn;
+		for(BoardCell<T> cell:cells){
+			cell.putColumn(theColumn);
+		}
+	}
 	public int getRows(){
 		return cells.size();
 	}
