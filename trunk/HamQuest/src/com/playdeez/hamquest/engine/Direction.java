@@ -1,4 +1,6 @@
-package com.playdeez.boardgames;
+package com.playdeez.hamquest.engine;
+
+import com.playdeez.boardgames.IDirection;
 
 public enum Direction implements IDirection<Direction> {
 	NORTH(0,0,-1),
