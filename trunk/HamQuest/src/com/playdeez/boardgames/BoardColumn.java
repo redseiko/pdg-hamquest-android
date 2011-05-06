@@ -3,7 +3,7 @@ package com.playdeez.boardgames;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BoardColumn<T extends IBoardCellContents> {
+public class BoardColumn<T extends IBoardCellContents<T>> {
 	private Integer column;
 	private List<BoardCell<T>> cells;
 	public Integer getColumn(){

@@ -1,6 +1,6 @@
 package com.playdeez.boardgames;
 
-public class BoardCell<T extends IBoardCellContents> {
+public class BoardCell<T extends IBoardCellContents<T>> {
 	private Integer column;
 	private Integer row;
 	private T contents;
@@ -35,5 +35,9 @@ public class BoardCell<T extends IBoardCellContents> {
 	}
 	public BoardCell(Integer theColumn, Integer theRow){
 		initializeBoardCell(theColumn,theRow,null);
+	}
+	public BoardCell<T> duplicate()
+	{
+		return null;
 	}
 }

@@ -3,7 +3,7 @@ package com.playdeez.boardgames;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Board<T extends IBoardCellContents> {
+public class Board<T extends IBoardCellContents<T>> {
 	private List<BoardColumn<T>> columns;
 	public int getColumns(){
 		return columns.size();
@@ -14,7 +14,7 @@ public class Board<T extends IBoardCellContents> {
 	public BoardColumn<T> getColumn(int theColumn){
 		return columns.get(theColumn);
 	}
-	public Board(int theColumns, int theRows){
+	public Board(Integer theColumns, Integer theRows){
 		columns = new ArrayList<BoardColumn<T>>();
 		while(columns.size()<theColumns){
 			columns.add(new BoardColumn<T>(columns.size(),theRows));
