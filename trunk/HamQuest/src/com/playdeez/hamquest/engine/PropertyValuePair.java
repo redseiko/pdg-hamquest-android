@@ -22,10 +22,10 @@ public class PropertyValuePair {
 		if(node.getAttributes().getNamedItem(GameConstants.TagNames.Template)!=null){
 			String[] filenames = node.getAttributes().getNamedItem(GameConstants.TagNames.Template).getNodeValue().split(",");
 			for(String filename:filenames){
-				
+				//TODO: finish template loading
 			}
 		}
-		
+		//TODO: finish loading PropertyValuePairs
 		return properties;
 	}
 }
