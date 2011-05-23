@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<themes>
+  <theme>
+    <identifier>default</identifier>
+    <property-groups>config/default/propertyGroups.xml</property-groups>
+    <messages>config/default/messages.xml</messages>
+    <terrains>config/default/terrains.xml</terrains>
+  </theme>
+</themes>
