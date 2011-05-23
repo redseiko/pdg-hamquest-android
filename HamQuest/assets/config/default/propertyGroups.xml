@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<property-groups>
+  <property-group>
+    <identifier>roomChance</identifier>
+    <total type="integer">100</total>
+    <door-count1 type="integer">100</door-count1>
+    <door-count2 type="integer">50</door-count2>
+    <door-count3 type="integer">75</door-count3>
+    <door-count4 type="integer">25</door-count4>
+  </property-group>
+</property-groups>
