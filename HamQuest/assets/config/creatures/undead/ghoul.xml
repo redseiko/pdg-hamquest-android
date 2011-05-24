@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <creature>
-  <mover type="CreatureMoveHandler"/>
-  <tags type="TagSet">
+  <mover type="creature-move-handler"/>
+  <tags type="tag-set">
     <tag>creature</tag>
   </tags>
-  <imageUri>images/map/creatures/undead/ghoul.png</imageUri>
+  <image-path>images/map/creatures/undead/ghoul.png</image-path>
   <identifier>ghoul</identifier>
   <name>ghoul</name>
-  <moraleRoll type="BoolGenerator">
+  <morale-roll type="boolean-generator">
     <entry>
       <value>true</value>
       <weight>1</weight>
     </entry>
-  </moraleRoll>
-  <itemDrops type="StringGenerator">
+  </morale-roll>
+  <item-drops type="string-generator">
     <entry>
       <value>Sapphire</value>
       <weight>1</weight>
@@ -26,9 +26,8 @@
       <value></value>
       <weight>2</weight>
     </entry>
-  </itemDrops>
-  <attack type="StatisticHolder">3</attack>
-  <attackRoll type="IntGenerator">
+  </item-drops>
+  <attack type="integer-generator">
     <entry>
       <value>0</value>
       <weight>1</weight>
@@ -45,24 +44,43 @@
       <value>3</value>
       <weight>1</weight>
     </entry>
-  </attackRoll>
-  <defend type="StatisticHolder">4</defend>
-  <health type="StatisticHolder">3</health>
-  <speed type="StatisticHolder">8</speed>
-  <creatureCount>10</creatureCount>
-  <attackDie>3</attackDie>
-  <defendDie>2</defendDie>
-  <spawnWeight>2</spawnWeight>
+  </attack>
+  <defend type="integer-generator">
+  	<entry>
+  		<value>0</value>
+  		<weight>16</weight>
+  	</entry>
+  	<entry>
+  		<value>1</value>
+  		<weight>32</weight>
+  	</entry>
+  	<entry>
+  		<value>2</value>
+  		<weight>24</weight>
+  	</entry>
+  	<entry>
+  		<value>3</value>
+  		<weight>8</weight>
+  	</entry>
+  	<entry>
+  		<value>4</value>
+  		<weight>1</weight>
+  	</entry>
+  </defend>
+  <health type="integer">3</health>
+  <speed type="integer">8</speed>
+  <creature-count type="integer">10</creature-count>
+  <spawn-weight type="integer">2</spawn-weight>
   <placement>DeadEnd</placement>
-  <numberOfAttacks>1</numberOfAttacks>
-  <specialAttack>Ghoul</specialAttack>
-  <necromancerWeight>1</necromancerWeight>
-  <summonerWeight>0</summonerWeight>
-  <hitMessage>HitGhoul</hitMessage>
-  <missMessage>MissedGhoul</missMessage>
-  <killMessage>KilledGhoul</killMessage>
-  <hitByMessage>HitByGhoul</hitByMessage>
-  <missedByMessage>MissedByGhoul</missedByMessage>
-  <killedByMessage>KilledByGhoul</killedByMessage>
-  <experiencePoints>3</experiencePoints>
+  <number-of-attacks type="integer">1</number-of-attacks>
+  <special-attack>Ghoul</special-attack>
+  <necromancer-weight type="integer">1</necromancer-weight>
+  <summoner-weight type="integer">0</summoner-weight>
+  <hit-message>HitGhoul</hit-message>
+  <miss-message>MissedGhoul</miss-message>
+  <kill-message>KilledGhoul</kill-message>
+  <hit-by-message>HitByGhoul</hit-by-message>
+  <missed-by-message>MissedByGhoul</missed-by-message>
+  <killed-by-message>KilledByGhoul</killed-by-message>
+  <experience-points type="integer">3</experience-points>
 </creature>

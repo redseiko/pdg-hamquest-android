@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <creature>
-  <mover type="CreatureMoveHandler"/>
-  <tags type="TagSet">
+  <mover type="creature-move-handler"/>
+  <tags type="tag-set">
     <tag>portal</tag>
   </tags>
-  <imageUri>images/map/items/misc/portal.png</imageUri>
+  <image-path>images/map/items/misc/portal.png</image-path>
   <identifier>portal</identifier>
   <name>teleport monster</name>
-  <moraleRoll type="BoolGenerator">
+  <morale-roll type="boolean-generator">
     <entry>
       <value>true</value>
       <weight>5</weight>
@@ -16,10 +16,10 @@
       <value>false</value>
       <weight>1</weight>
     </entry>
-  </moraleRoll>
+  </morale-roll>
   <itemBlocks>Amulet</itemBlocks>
   <itemBlockMessage>PortalMonsterAmuletBlock</itemBlockMessage>
-  <itemDrops type="StringGenerator">
+  <item-drops type="string-generator">
     <entry>
       <value>Portal</value>
       <weight>1</weight>
@@ -32,9 +32,8 @@
       <value></value>
       <weight>10</weight>
     </entry>
-  </itemDrops>
-  <attack type="StatisticHolder">5</attack>
-  <attackRoll type="IntGenerator">
+  </item-drops>
+  <attack type="integer-generator">
     <entry>
       <value>0</value>
       <weight>1</weight>
@@ -59,24 +58,27 @@
       <value>5</value>
       <weight>1</weight>
     </entry>
-  </attackRoll>
-  <defend type="StatisticHolder">0</defend>
-  <health type="StatisticHolder">1</health>
-  <speed type="StatisticHolder">12</speed>
-  <creatureCount>20</creatureCount>
-  <attackDie>3</attackDie>
-  <defendDie>2</defendDie>
-  <spawnWeight>0</spawnWeight>
+  </attack>
+  <defend type="integer-generator">
+	<entry>
+		<value>0</value>
+		<weight>1</weight>
+	</entry>
+  </defend>
+  <health type="integer">1</health>
+  <speed type="integer">12</speed>
+  <creature-count type="integer">20</creature-count>
+  <spawn-weight type="integer">0</spawn-weight>
   <placement>DeadEnd</placement>
-  <numberOfAttacks>1</numberOfAttacks>
-  <specialAttack>Teleport</specialAttack>
-  <necromancerWeight>0</necromancerWeight>
-  <summonerWeight>0</summonerWeight>
-  <hitMessage>HitTeleportMonster</hitMessage>
-  <missMessage>MissedTeleportMonster</missMessage>
-  <killMessage>KilledTeleportMonster</killMessage>
-  <hitByMessage>HitByTeleportMonster</hitByMessage>
-  <missedByMessage>MissedByTeleportMonster</missedByMessage>
-  <killedByMessage>KilledByTeleportMonster</killedByMessage>
-  <experiencePoints>1</experiencePoints>
+  <number-of-attacks type="integer">1</number-of-attacks>
+  <special-attack>Teleport</special-attack>
+  <necromancer-weight type="integer">0</necromancer-weight>
+  <summoner-weight type="integer">0</summoner-weight>
+  <hit-message>HitTeleportMonster</hit-message>
+  <miss-message>MissedTeleportMonster</miss-message>
+  <kill-message>KilledTeleportMonster</kill-message>
+  <hit-by-message>HitByTeleportMonster</hit-by-message>
+  <missed-by-message>MissedByTeleportMonster</missed-by-message>
+  <killed-by-message>KilledByTeleportMonster</killed-by-message>
+  <experience-points type="integer">1</experience-points>
 </creature>

@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <creature>
-  <mover type="CreatureMoveHandler"/>
-  <tags type="TagSet">
+  <mover type="creature-move-handler"/>
+  <tags type="tag-set">
     <tag>creature</tag>
   </tags>
-  <imageUri>images/map/creatures/chaos/warrior.png</imageUri>
+  <image-path>images/map/creatures/chaos/warrior.png</image-path>
   <identifier>warrior</identifier>
   <name>chaos warrior</name>
-  <moraleRoll type="BoolGenerator">
+  <morale-roll type="boolean-generator">
     <entry>
       <value>true</value>
       <weight>1</weight>
     </entry>
-  </moraleRoll>
-  <itemDrops type="StringGenerator">
+  </morale-roll>
+  <item-drops type="string-generator">
     <entry>
       <value>MagicLantern</value>
       <weight>1</weight>
@@ -34,47 +34,65 @@
       <value></value>
       <weight>5</weight>
     </entry>
-  </itemDrops>
-  <attack type="StatisticHolder">4</attack>
-  <attackRoll type="IntGenerator">
-    <entry>
-      <value>0</value>
-      <weight>1</weight>
-    </entry>
-    <entry>
-      <value>1</value>
-      <weight>4</weight>
-    </entry>
-    <entry>
-      <value>2</value>
-      <weight>6</weight>
-    </entry>
-    <entry>
-      <value>3</value>
-      <weight>4</weight>
-    </entry>
-    <entry>
-      <value>4</value>
-      <weight>1</weight>
-    </entry>
-  </attackRoll>
-  <defend type="StatisticHolder">4</defend>
-  <health type="StatisticHolder">3</health>
-  <speed type="StatisticHolder">7</speed>
-  <creatureCount>6</creatureCount>
-  <attackDie>3</attackDie>
-  <defendDie>2</defendDie>
-  <spawnWeight>2</spawnWeight>
+  </item-drops>
+  <attack type="integer-generator">
+  	<entry>
+  		<value>0</value>
+  		<weight>1</weight>
+  	</entry>
+  	<entry>
+  		<value>1</value>
+  		<weight>4</weight>
+  	</entry>
+  	<entry>
+  		<value>2</value>
+  		<weight>6</weight>
+  	</entry>
+  	<entry>
+  		<value>3</value>
+  		<weight>4</weight>
+  	</entry>
+  	<entry>
+  		<value>4</value>
+  		<weight>1</weight>
+  	</entry>
+  </attack>
+  <defend type="integer-generator">
+  	<entry>
+  		<value>0</value>
+  		<weight>16</weight>
+  	</entry>
+  	<entry>
+  		<value>1</value>
+  		<weight>32</weight>
+  	</entry>
+  	<entry>
+  		<value>2</value>
+  		<weight>24</weight>
+  	</entry>
+  	<entry>
+  		<value>3</value>
+  		<weight>8</weight>
+  	</entry>
+  	<entry>
+  		<value>4</value>
+  		<weight>1</weight>
+  	</entry>
+  </defend>
+  <health type="integer">3</health>
+  <speed type="integer">7</speed>
+  <creature-count type="integer">6</creature-count>
+  <spawn-weight type="integer">2</spawn-weight>
   <placement>DeadEnd</placement>
-  <numberOfAttacks>1</numberOfAttacks>
-  <specialAttack>None</specialAttack>
-  <necromancerWeight>0</necromancerWeight>
-  <summonerWeight>0</summonerWeight>
-  <hitMessage>HitChaosWarrior</hitMessage>
-  <missMessage>MissedChaosWarrior</missMessage>
-  <killMessage>KilledChaosWarrior</killMessage>
-  <hitByMessage>HitByChaosWarrior</hitByMessage>
-  <missedByMessage>MissedByChaosWarrior</missedByMessage>
-  <killedByMessage>KilledByChaosWarrior</killedByMessage>
-  <experiencePoints>3</experiencePoints>
+  <number-of-attacks type="integer">1</number-of-attacks>
+  <special-attack>None</special-attack>
+  <necromancer-weight type="integer">0</necromancer-weight>
+  <summoner-weight type="integer">0</summoner-weight>
+  <hit-message>HitChaosWarrior</hit-message>
+  <miss-message>MissedChaosWarrior</miss-message>
+  <kill-message>KilledChaosWarrior</kill-message>
+  <hit-by-message>HitByChaosWarrior</hit-by-message>
+  <missed-by-message>MissedByChaosWarrior</missed-by-message>
+  <killed-by-message>KilledByChaosWarrior</killed-by-message>
+  <experience-points type="integer">3</experience-points>
 </creature>

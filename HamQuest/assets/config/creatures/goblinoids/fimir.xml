@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <creature>
-  <mover type="CreatureMoveHandler"/>
-  <tags type="TagSet">
+  <mover type="creature-move-handler"/>
+  <tags type="tag-set">
     <tag>creature</tag>
   </tags>
-  <imageUri>images/map/creatures/goblinoids/fimir.png</imageUri>
+  <image-path>images/map/creatures/goblinoids/fimir.png</image-path>
   <identifier>fimir</identifier>
   <name>fimir</name>
-  <moraleRoll type="BoolGenerator">
+  <morale-roll type="boolean-generator">
     <entry>
       <value>true</value>
       <weight>5</weight>
@@ -16,8 +16,8 @@
       <value>false</value>
       <weight>1</weight>
     </entry>
-  </moraleRoll>
-  <itemDrops type="StringGenerator">
+  </morale-roll>
+  <item-drops type="string-generator">
     <entry>
       <value>Lantern</value>
       <weight>1</weight>
@@ -42,9 +42,8 @@
       <value></value>
       <weight>6</weight>
     </entry>
-  </itemDrops>
-  <attack type="StatisticHolder">3</attack>
-  <attackRoll type="IntGenerator">
+  </item-drops>
+  <attack type="integer-generator">
     <entry>
       <value>0</value>
       <weight>1</weight>
@@ -61,24 +60,39 @@
       <value>3</value>
       <weight>1</weight>
     </entry>
-  </attackRoll>
-  <defend type="StatisticHolder">3</defend>
-  <health type="StatisticHolder">2</health>
-  <speed type="StatisticHolder">6</speed>
-  <creatureCount>12</creatureCount>
-  <attackDie>3</attackDie>
-  <defendDie>2</defendDie>
-  <spawnWeight>3</spawnWeight>
+  </attack>
+  <defend type="integer-generator">
+    <entry>
+      <value>0</value>
+      <weight>8</weight>
+    </entry>
+    <entry>
+      <value>1</value>
+      <weight>12</weight>
+    </entry>
+    <entry>
+      <value>2</value>
+      <weight>6</weight>
+    </entry>
+    <entry>
+      <value>3</value>
+      <weight>1</weight>
+    </entry>
+  </defend>
+  <health type="integer">2</health>
+  <speed type="integer">6</speed>
+  <creature-count type="integer">12</creature-count>
+  <spawn-weight type="integer">3</spawn-weight>
   <placement>Either</placement>
-  <numberOfAttacks>1</numberOfAttacks>
-  <specialAttack>None</specialAttack>
-  <necromancerWeight>0</necromancerWeight>
-  <summonerWeight>10</summonerWeight>
-  <hitMessage>HitFimir</hitMessage>
-  <missMessage>MissedFimir</missMessage>
-  <killMessage>KilledFimir</killMessage>
-  <hitByMessage>HitByFimir</hitByMessage>
-  <missedByMessage>MissedByFimir</missedByMessage>
-  <killedByMessage>KilledByFimir</killedByMessage>
-  <experiencePoints>2</experiencePoints>
+  <number-of-attacks type="integer">1</number-of-attacks>
+  <special-attack>None</special-attack>
+  <necromancer-weight type="integer">0</necromancer-weight>
+  <summoner-weight type="integer">10</summoner-weight>
+  <hit-message>HitFimir</hit-message>
+  <miss-message>MissedFimir</miss-message>
+  <kill-message>KilledFimir</kill-message>
+  <hit-by-message>HitByFimir</hit-by-message>
+  <missed-by-message>MissedByFimir</missed-by-message>
+  <killed-by-message>KilledByFimir</killed-by-message>
+  <experience-points type="integer">2</experience-points>
 </creature>

@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <creature>
-  <mover type="CreatureMoveHandler"/>
-  <tags type="TagSet">
+  <mover type="creature-move-handler"/>
+  <tags type="tag-set">
     <tag>creature</tag>
   </tags>
-  <imageUri>images/map/creatures/chaos/gargoyle.png</imageUri>
+  <image-path>images/map/creatures/chaos/gargoyle.png</image-path>
   <identifier>gargoyle</identifier>
   <name>gargoyle</name>
-  <moraleRoll type="BoolGenerator">
+  <morale-roll type="boolean-generator">
     <entry>
       <value>true</value>
       <weight>1</weight>
     </entry>
-  </moraleRoll>
-  <itemDrops type="StringGenerator">
+  </morale-roll>
+  <item-drops type="string-generator">
     <entry>
       <value>Amethyst</value>
       <weight>1</weight>
@@ -26,47 +26,69 @@
       <value></value>
       <weight>2</weight>
     </entry>
-  </itemDrops>
-  <attack type="StatisticHolder">4</attack>
-  <attackRoll type="IntGenerator">
-    <entry>
-      <value>0</value>
-      <weight>1</weight>
-    </entry>
-    <entry>
-      <value>1</value>
-      <weight>4</weight>
-    </entry>
-    <entry>
-      <value>2</value>
-      <weight>6</weight>
-    </entry>
-    <entry>
-      <value>3</value>
-      <weight>4</weight>
-    </entry>
-    <entry>
-      <value>4</value>
-      <weight>1</weight>
-    </entry>
-  </attackRoll>
-  <defend type="StatisticHolder">5</defend>
-  <health type="StatisticHolder">3</health>
-  <speed type="StatisticHolder">6</speed>
-  <creatureCount>3</creatureCount>
-  <attackDie>3</attackDie>
-  <defendDie>2</defendDie>
-  <spawnWeight>1</spawnWeight>
+  </item-drops>
+  <attack type="integer-generator">
+  	<entry>
+  		<value>0</value>
+  		<weight>1</weight>
+  	</entry>
+  	<entry>
+  		<value>1</value>
+  		<weight>4</weight>
+  	</entry>
+  	<entry>
+  		<value>2</value>
+  		<weight>6</weight>
+  	</entry>
+  	<entry>
+  		<value>3</value>
+  		<weight>4</weight>
+  	</entry>
+  	<entry>
+  		<value>4</value>
+  		<weight>1</weight>
+  	</entry>
+  </attack>
+  <defend type="integer-generator">
+  	<entry>
+  		<value>0</value>
+  		<weight>32</weight>
+  	</entry>
+  	<entry>
+  		<value>1</value>
+  		<weight>80</weight>
+  	</entry>
+  	<entry>
+  		<value>2</value>
+  		<weight>80</weight>
+  	</entry>
+  	<entry>
+  		<value>3</value>
+  		<weight>40</weight>
+  	</entry>
+  	<entry>
+  		<value>4</value>
+  		<weight>10</weight>
+  	</entry>
+  	<entry>
+  		<value>5</value>
+  		<weight>1</weight>
+  	</entry>
+  </defend>
+  <health type="integer">3</health>
+  <speed type="integer">6</speed>
+  <creature-count type="integer">3</creature-count>
+  <spawn-weight type="integer">1</spawn-weight>
   <placement>DeadEnd</placement>
-  <numberOfAttacks>1</numberOfAttacks>
-  <specialAttack>None</specialAttack>
-  <necromancerWeight>0</necromancerWeight>
-  <summonerWeight>0</summonerWeight>
-  <hitMessage>HitGargoyle</hitMessage>
-  <missMessage>MissedGargoyle</missMessage>
-  <killMessage>KilledGargoyle</killMessage>
-  <hitByMessage>HitByGargoyle</hitByMessage>
-  <missedByMessage>MissedByGargoyle</missedByMessage>
-  <killedByMessage>KilledByGargoyle</killedByMessage>
-  <experiencePoints>3</experiencePoints>
+  <number-of-attacks type="integer">1</number-of-attacks>
+  <special-attack>None</special-attack>
+  <necromancer-weight type="integer">0</necromancer-weight>
+  <summoner-weight type="integer">0</summoner-weight>
+  <hit-message>HitGargoyle</hit-message>
+  <miss-message>MissedGargoyle</miss-message>
+  <kill-message>KilledGargoyle</kill-message>
+  <hit-by-message>HitByGargoyle</hit-by-message>
+  <missed-by-message>MissedByGargoyle</missed-by-message>
+  <killed-by-message>KilledByGargoyle</killed-by-message>
+  <experience-points type="integer">3</experience-points>
 </creature>
