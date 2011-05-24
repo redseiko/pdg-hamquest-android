@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<creature>
+  <mover type="CreatureMoveHandler"/>
+  <tags type="TagSet">
+    <tag>creature</tag>
+  </tags>
+  <imageUri>images/map/creatures/goblinoids/fimir.png</imageUri>
+  <identifier>fimir</identifier>
+  <name>fimir</name>
+  <moraleRoll type="BoolGenerator">
+    <entry>
+      <value>true</value>
+      <weight>5</weight>
+    </entry>
+    <entry>
+      <value>false</value>
+      <weight>1</weight>
+    </entry>
+  </moraleRoll>
+  <itemDrops type="StringGenerator">
+    <entry>
+      <value>Lantern</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>Chainmail</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>Gold</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>Silver</value>
+      <weight>2</weight>
+    </entry>
+    <entry>
+      <value>Shortsword</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value></value>
+      <weight>6</weight>
+    </entry>
+  </itemDrops>
+  <attack type="StatisticHolder">3</attack>
+  <attackRoll type="IntGenerator">
+    <entry>
+      <value>0</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>1</value>
+      <weight>3</weight>
+    </entry>
+    <entry>
+      <value>2</value>
+      <weight>3</weight>
+    </entry>
+    <entry>
+      <value>3</value>
+      <weight>1</weight>
+    </entry>
+  </attackRoll>
+  <defend type="StatisticHolder">3</defend>
+  <health type="StatisticHolder">2</health>
+  <speed type="StatisticHolder">6</speed>
+  <creatureCount>12</creatureCount>
+  <attackDie>3</attackDie>
+  <defendDie>2</defendDie>
+  <spawnWeight>3</spawnWeight>
+  <placement>Either</placement>
+  <numberOfAttacks>1</numberOfAttacks>
+  <specialAttack>None</specialAttack>
+  <necromancerWeight>0</necromancerWeight>
+  <summonerWeight>10</summonerWeight>
+  <hitMessage>HitFimir</hitMessage>
+  <missMessage>MissedFimir</missMessage>
+  <killMessage>KilledFimir</killMessage>
+  <hitByMessage>HitByFimir</hitByMessage>
+  <missedByMessage>MissedByFimir</missedByMessage>
+  <killedByMessage>KilledByFimir</killedByMessage>
+  <experiencePoints>2</experiencePoints>
+</creature>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<creature>
+  <mover type="CreatureMoveHandler"/>
+  <tags type="TagSet">
+    <tag>creature</tag>
+  </tags>
+  <imageUri>images/map/creatures/undead/skeleton.png</imageUri>
+  <identifier>skeleton</identifier>
+  <name>skeleton</name>
+  <moraleRoll type="BoolGenerator">
+    <entry>
+      <value>true</value>
+      <weight>1</weight>
+    </entry>
+  </moraleRoll>
+  <itemDrops type="StringGenerator">
+    <entry>
+      <value>Copper</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value></value>
+      <weight>1</weight>
+    </entry>
+  </itemDrops>
+  <attack type="StatisticHolder">2</attack>
+  <attackRoll type="IntGenerator">
+    <entry>
+      <value>0</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>1</value>
+      <weight>2</weight>
+    </entry>
+    <entry>
+      <value>2</value>
+      <weight>1</weight>
+    </entry>
+  </attackRoll>
+  <defend type="StatisticHolder">2</defend>
+  <health type="StatisticHolder">1</health>
+  <speed type="StatisticHolder">6</speed>
+  <creatureCount>32</creatureCount>
+  <attackDie>3</attackDie>
+  <defendDie>2</defendDie>
+  <spawnWeight>4</spawnWeight>
+  <placement>NonDeadEnd</placement>
+  <numberOfAttacks>1</numberOfAttacks>
+  <specialAttack>None</specialAttack>
+  <necromancerWeight>80</necromancerWeight>
+  <summonerWeight>0</summonerWeight>
+  <hitMessage>HitSkeleton</hitMessage>
+  <missMessage>MissedSkeleton</missMessage>
+  <killMessage>KilledSkeleton</killMessage>
+  <hitByMessage>HitBySkeleton</hitByMessage>
+  <missedByMessage>MissedBySkeleton</missedByMessage>
+  <killedByMessage>KilledBySkeleton</killedByMessage>
+  <experiencePoints>1</experiencePoints>
+</creature>

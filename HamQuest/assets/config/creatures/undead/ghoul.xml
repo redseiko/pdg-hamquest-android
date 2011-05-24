@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<creature>
+  <mover type="CreatureMoveHandler"/>
+  <tags type="TagSet">
+    <tag>creature</tag>
+  </tags>
+  <imageUri>images/map/creatures/undead/ghoul.png</imageUri>
+  <identifier>ghoul</identifier>
+  <name>ghoul</name>
+  <moraleRoll type="BoolGenerator">
+    <entry>
+      <value>true</value>
+      <weight>1</weight>
+    </entry>
+  </moraleRoll>
+  <itemDrops type="StringGenerator">
+    <entry>
+      <value>Sapphire</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>Amethyst</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value></value>
+      <weight>2</weight>
+    </entry>
+  </itemDrops>
+  <attack type="StatisticHolder">3</attack>
+  <attackRoll type="IntGenerator">
+    <entry>
+      <value>0</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>1</value>
+      <weight>3</weight>
+    </entry>
+    <entry>
+      <value>2</value>
+      <weight>3</weight>
+    </entry>
+    <entry>
+      <value>3</value>
+      <weight>1</weight>
+    </entry>
+  </attackRoll>
+  <defend type="StatisticHolder">4</defend>
+  <health type="StatisticHolder">3</health>
+  <speed type="StatisticHolder">8</speed>
+  <creatureCount>10</creatureCount>
+  <attackDie>3</attackDie>
+  <defendDie>2</defendDie>
+  <spawnWeight>2</spawnWeight>
+  <placement>DeadEnd</placement>
+  <numberOfAttacks>1</numberOfAttacks>
+  <specialAttack>Ghoul</specialAttack>
+  <necromancerWeight>1</necromancerWeight>
+  <summonerWeight>0</summonerWeight>
+  <hitMessage>HitGhoul</hitMessage>
+  <missMessage>MissedGhoul</missMessage>
+  <killMessage>KilledGhoul</killMessage>
+  <hitByMessage>HitByGhoul</hitByMessage>
+  <missedByMessage>MissedByGhoul</missedByMessage>
+  <killedByMessage>KilledByGhoul</killedByMessage>
+  <experiencePoints>3</experiencePoints>
+</creature>
