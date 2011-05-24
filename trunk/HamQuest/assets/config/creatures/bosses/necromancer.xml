@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <creature>
-  <mover type="CreatureMoveHandler"/>
-  <tags type="TagSet">
+  <mover type="creature-move-handler"/>
+  <tags type="tag-set">
     <tag>creature</tag>
   </tags>
-  <imageUri>images/map/creatures/bosses/necromancer.png</imageUri>
+  <image-path>images/map/creatures/bosses/necromancer.png</image-path>
   <identifier>necromancer</identifier>
   <name>necromancer</name>
-  <moraleRoll type="BoolGenerator">
+  <morale-roll type="boolean-generator">
     <entry>
       <value>true</value>
       <weight>2</weight>
@@ -16,32 +16,52 @@
       <value>false</value>
       <weight>1</weight>
     </entry>
-  </moraleRoll>
-  <itemDrops type="StringGenerator">
+  </morale-roll>
+  <item-drops type="string-generator">
     <entry>
       <value>Amulet</value>
       <weight>1</weight>
     </entry>
-  </itemDrops>
-  <attack type="StatisticHolder">1</attack>
-  <defend type="StatisticHolder">2</defend>
-  <health type="StatisticHolder">8</health>
-  <speed type="StatisticHolder">4</speed>
-  <creatureCount>1</creatureCount>
-  <attackDie>3</attackDie>
-  <defendDie>2</defendDie>
-  <spawnWeight>0</spawnWeight>
+  </item-drops>
+  <attack type="integer-generator">
+    <entry>
+      <value>0</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>1</value>
+      <weight>1</weight>
+    </entry>
+  </attack>
+  <defend type="integer-generator">
+    <entry>
+      <value>0</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>1</value>
+      <weight>4</weight>
+    </entry>
+    <entry>
+      <value>2</value>
+      <weight>4</weight>
+    </entry>
+  </defend>
+  <health type="integer">8</health>
+  <speed type="integer">4</speed>
+  <creature-count type="integer">1</creature-count>
+  <spawn-weight type="integer">0</spawn-weight>
   <placement>DeadEnd</placement>
-  <numberOfAttacks>1</numberOfAttacks>
-  <specialAttack>Generator</specialAttack>
-  <generatorTable>necromancerWeight</generatorTable>
-  <necromancerWeight>0</necromancerWeight>
-  <summonerWeight>0</summonerWeight>
-  <hitMessage>HitNecromancer</hitMessage>
-  <missMessage>MissedNecromancer</missMessage>
-  <killMessage>KilledNecromancer</killMessage>
-  <hitByMessage>HitByNecromancer</hitByMessage>
-  <missedByMessage>MissedByNecromancer</missedByMessage>
-  <killedByMessage>KilledByNecromancer</killedByMessage>
-  <experiencePoints>8</experiencePoints>
+  <number-of-attacks type="integer">1</number-of-attacks>
+  <special-attack>Generator</special-attack>
+  <generatorTable>necromancer-weight</generatorTable>
+  <necromancer-weight type="integer">0</necromancer-weight>
+  <summoner-weight type="integer">0</summoner-weight>
+  <hit-message>HitNecromancer</hit-message>
+  <miss-message>MissedNecromancer</miss-message>
+  <kill-message>KilledNecromancer</kill-message>
+  <hit-by-message>HitByNecromancer</hit-by-message>
+  <missed-by-message>MissedByNecromancer</missed-by-message>
+  <killed-by-message>KilledByNecromancer</killed-by-message>
+  <experience-points type="integer">8</experience-points>
 </creature>

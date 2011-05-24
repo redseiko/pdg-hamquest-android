@@ -1,36 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <creature>
-  <mover type="PlayerMoveHandler"/>
-  <tags type="TagSet">
+  <mover type="player-move-handler"/>
+  <tags type="tag-set">
     <tag>player</tag>
   </tags>
-  <imageUri>images/map/creatures/player/player.png</imageUri>
+  <image-path>images/map/creatures/player/player.png</image-path>
   <name>player</name>
-  <creatureCount>0</creatureCount>
+  <creature-count type="integer">0</creature-count>
   <attackDie>3</attackDie>
   <defendDie>2</defendDie>
-  <spawnWeight>0</spawnWeight>
+  <spawn-weight type="integer">0</spawn-weight>
   <placement>NonDeadEnd</placement>
-  <numberOfAttacks>1</numberOfAttacks>
-  <specialAttack>None</specialAttack>
-  <necromancerWeight>0</necromancerWeight>
-  <summonerWeight>0</summonerWeight>
+  <number-of-attacks type="integer">1</number-of-attacks>
+  <special-attack>None</special-attack>
+  <necromancer-weight type="integer">0</necromancer-weight>
+  <summoner-weight type="integer">0</summoner-weight>
   <identifier>player</identifier>
-  <attack type="PlayerStatisticHolder"></attack>
-  <attackRoll type="IntGenerator">
+  <attack type="integer-generator">
     <entry>
       <value>0</value>
       <weight>1</weight>
     </entry>
-  </attackRoll>
-  <defend type="PlayerStatisticHolder"></defend>
-  <health type="PlayerStatisticHolder"></health>
-  <speed type="PlayerStatisticHolder"></speed>
-  <stepTracker type="PlayerStepTracker"></stepTracker>
-  <messageStatistics type="PlayerMessageStatistics"></messageStatistics>
-  <itemDurabilities type="StringCounter"></itemDurabilities>
-  <playerConfiguration type="PlayerConfiguration">Attack</playerConfiguration>
-  <speedRoll type="IntGenerator">
+  </attack>
+  <defend type="integer-generator">
+    <entry>
+      <value>0</value>
+      <weight>1</weight>
+    </entry>
+  </defend>
+  <health type="integer">0</health>
+  <speed type="integer">0</speed>
+  <step-tracker type="player-step-tracker"></step-tracker>
+  <message-statistics type="player-message-statistics"></message-statistics>
+  <item-durabilities type="string-counter"></item-durabilities>
+  <player-configuration type="player-configuration">Attack</player-configuration>
+  <speed-roll type="integer-generator">
     <entry>
       <value>2</value>
       <weight>1</weight>
@@ -75,17 +79,17 @@
       <value>12</value>
       <weight>1</weight>
     </entry>
-  </speedRoll>
-  <gainExperiencePointMessage>GainExperiencePoint</gainExperiencePointMessage>
-  <gainExperiencePointsMessage>GainExperiencePoints</gainExperiencePointsMessage>
-  <gainExperienceLevelMessage>GainExperienceLevel</gainExperienceLevelMessage>
-  <killedMessage>YouHaveDied</killedMessage>
-  <questCompletedMessage>QuestCompleted</questCompletedMessage>
-  <thiefTookMegahamMessage>ThiefTookMegaham</thiefTookMegahamMessage>
-  <thiefTookGoldMessage>ThiefTookGold</thiefTookGoldMessage>
-  <ghoulDrainedEnergyMessage>GhoulDrainedEnergy</ghoulDrainedEnergyMessage>
-  <wonGameMessage>WonGame</wonGameMessage>
-  <needCompletedMegahamMessage>NeedCompletedMegaham</needCompletedMegahamMessage>
-  <needRainbowKeyMessage>NeedRainbowKey</needRainbowKeyMessage>
-  <cannotExitWithAmuletMessage>CannotExitWithAmulet</cannotExitWithAmuletMessage>
+  </speed-roll>
+  <gain-experience-point-message>GainExperiencePoint</gain-experience-point-message>
+  <gain-experience-points-message>Gainexperience-points</gain-experience-points-message>
+  <gain-experience-level-message>GainExperienceLevel</gain-experience-level-message>
+  <killed-message>YouHaveDied</killed-message>
+  <quest-completed-message>QuestCompleted</quest-completed-message>
+  <thief-took-megaham-message>ThiefTookMegaham</thief-took-megaham-message>
+  <thief-took-gold-message>ThiefTookGold</thief-took-gold-message>
+  <ghoul-drained-energy-message>GhoulDrainedEnergy</ghoul-drained-energy-message>
+  <won-game-message>WonGame</won-game-message>
+  <need-completed-megaham-message>NeedCompletedMegaham</need-completed-megaham-message>
+  <need-rainbow-key-message>NeedRainbowKey</need-rainbow-key-message>
+  <cannot-exit-with-amulet-message>CannotExitWithAmulet</cannot-exit-with-amulet-message>
 </creature>
