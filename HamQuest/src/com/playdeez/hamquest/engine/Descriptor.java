@@ -42,13 +42,13 @@ public class Descriptor {
 	public Descriptor(List<PropertyValuePair> thePropertyValues){
 		addPropertyValues(thePropertyValues);
 	}
-	private static Descriptor loadDescriptorFromNode(Node theNode, AssetManager theAssetManager,GameConstants<Game> theGameConstants){
+	private static Descriptor loadDescriptorFromNode(Node theNode, AssetManager theAssetManager,GameConstants<Game> theGameConstants) throws ParserConfigurationException, IOException, SAXException{
 		Log.d("Descriptor","loadDescriptorFromNode");
 		List<PropertyValuePair> properties = PropertyValuePair.loadPropertyValuesFromXmlNode(theNode,theAssetManager,theGameConstants);
 		Descriptor descriptor = new Descriptor(properties);
 		return descriptor;	
 	}
-	private static List<Descriptor> loadDescriptorsFromRootNode(Node theNode,AssetManager theAssetManager,GameConstants<Game> theGameConstants, String theDescriptorNodeName){
+	private static List<Descriptor> loadDescriptorsFromRootNode(Node theNode,AssetManager theAssetManager,GameConstants<Game> theGameConstants, String theDescriptorNodeName) throws ParserConfigurationException, IOException, SAXException{
 		List<Descriptor> result=new ArrayList<Descriptor>();
 		Log.d("Descriptor","loadDescriptorsFromRootNode");
 		NodeList nodes = theNode.getChildNodes();
@@ -61,7 +61,7 @@ public class Descriptor {
 		}
 		return result;
 	}
-	private static List<Descriptor> loadDescriptorsFromXmlDocument(Document theDocument,AssetManager theAssetManager,GameConstants<Game> theGameConstants, String theRootNodeName,String theDescriptorNodeName){
+	private static List<Descriptor> loadDescriptorsFromXmlDocument(Document theDocument,AssetManager theAssetManager,GameConstants<Game> theGameConstants, String theRootNodeName,String theDescriptorNodeName) throws ParserConfigurationException, IOException, SAXException{
 		Log.d("Descriptor","loadDescriptorsFromXmlDocument");
 		NodeList nodes = theDocument.getChildNodes();
 		for(Integer index=0;index<nodes.getLength();++index){
