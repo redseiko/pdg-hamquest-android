@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<creature>
+  <mover type="CreatureMoveHandler"/>
+  <tags type="TagSet">
+    <tag>creature</tag>
+  </tags>
+  <imageUri>images/map/creatures/bosses/minotaur.png</imageUri>
+  <identifier>minotaur</identifier>
+  <name>minotaur</name>
+  <moraleRoll type="BoolGenerator">
+    <entry>
+      <value>true</value>
+      <weight>1</weight>
+    </entry>
+  </moraleRoll>
+  <itemDrops type="StringGenerator">
+    <entry>
+      <value>BattleAxe</value>
+      <weight>1</weight>
+    </entry>
+  </itemDrops>
+  <attack type="integer-generator">
+  	<entry>
+  		<value>0</value>
+  		<weight>1</weight>
+  	</entry>
+  	<entry>
+  		<value>1</value>
+  		<weight>4</weight>
+  	</entry>
+  	<entry>
+  		<value>2</value>
+  		<weight>6</weight>
+  	</entry>
+  	<entry>
+  		<value>3</value>
+  		<weight>4</weight>
+  	</entry>
+  	<entry>
+  		<value>4</value>
+  		<weight>1</weight>
+  	</entry>
+  </attack>
+  <defend type="StatisticHolder">4</defend>
+  <health type="StatisticHolder">10</health>
+  <speed type="StatisticHolder">6</speed>
+  <creatureCount>1</creatureCount>
+  <attackDie>3</attackDie>
+  <defendDie>2</defendDie>
+  <spawnWeight>0</spawnWeight>
+  <placement>DeadEnd</placement>
+  <numberOfAttacks>2</numberOfAttacks>
+  <specialAttack>None</specialAttack>
+  <necromancerWeight>0</necromancerWeight>
+  <summonerWeight>1</summonerWeight>
+  <hitMessage>HitMinotaur</hitMessage>
+  <missMessage>MissedMinotaur</missMessage>
+  <killMessage>KilledMinotaur</killMessage>
+  <hitByMessage>HitByMinotaur</hitByMessage>
+  <missedByMessage>MissedByMinotaur</missedByMessage>
+  <killedByMessage>KilledByMinotaur</killedByMessage>
+  <experiencePoints>10</experiencePoints>
+</creature>

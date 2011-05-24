@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<creature>
+  <mover type="CreatureMoveHandler"/>
+  <tags type="TagSet">
+    <tag>creature</tag>
+  </tags>
+  <imageUri>images/map/creatures/chaos/thief.png</imageUri>
+  <identifier>thief</identifier>
+  <name>thief</name>
+  <moraleRoll type="BoolGenerator">
+    <entry>
+      <value>true</value>
+      <weight>2</weight>
+    </entry>
+    <entry>
+      <value>false</value>
+      <weight>1</weight>
+    </entry>
+  </moraleRoll>
+  <itemRemoves type="StringGenerator">
+    <entry>
+      <value>Quest</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>Gold</value>
+      <weight>9</weight>
+    </entry>
+  </itemRemoves>
+  <itemDrops type="StringGenerator">
+    <entry>
+      <value>Boots</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>Platinum</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>Electrum</value>
+      <weight>2</weight>
+    </entry>
+  </itemDrops>
+  <attack type="StatisticHolder">2</attack>
+  <attackRoll type="IntGenerator">
+    <entry>
+      <value>0</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>1</value>
+      <weight>2</weight>
+    </entry>
+    <entry>
+      <value>2</value>
+      <weight>1</weight>
+    </entry>
+  </attackRoll>
+  <defend type="StatisticHolder">4</defend>
+  <health type="StatisticHolder">2</health>
+  <speed type="StatisticHolder">18</speed>
+  <creatureCount>10</creatureCount>
+  <attackDie>3</attackDie>
+  <defendDie>2</defendDie>
+  <spawnWeight>4</spawnWeight>
+  <placement>Either</placement>
+  <numberOfAttacks>1</numberOfAttacks>
+  <specialAttack>Thief</specialAttack>
+  <necromancerWeight>0</necromancerWeight>
+  <summonerWeight>0</summonerWeight>
+  <hitMessage>HitThief</hitMessage>
+  <missMessage>MissedThief</missMessage>
+  <killMessage>KilledThief</killMessage>
+  <hitByMessage>HitByThief</hitByMessage>
+  <missedByMessage>MissedByThief</missedByMessage>
+  <killedByMessage>KilledByThief</killedByMessage>
+  <experiencePoints>2</experiencePoints>
+</creature>

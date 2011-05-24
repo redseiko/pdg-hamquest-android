@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<creature>
+  <mover type="creature-move-handler"/>
+  <tags type="tag-set">
+    <tag>creature</tag>
+  </tags>
+  <image-path>images/map/creatures/bosses/dragon.png</image-path>
+  <identifier>dragon</identifier>
+  <name>red dragon</name>
+  <morale-roll type="boolean-generator">
+    <entry>
+      <value>true</value>
+      <weight>1</weight>
+    </entry>
+  </morale-roll>
+  <item-drops type="string-generator">
+    <entry>
+      <value>Diamond</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>Emerald</value>
+      <weight>2</weight>
+    </entry>
+    <entry>
+      <value>Ruby</value>
+      <weight>4</weight>
+    </entry>
+  </item-drops>
+  <attack type="integer-generator">
+    <entry>
+      <value>0</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>1</value>
+      <weight>10</weight>
+    </entry>
+    <entry>
+      <value>2</value>
+      <weight>45</weight>
+    </entry>
+    <entry>
+      <value>3</value>
+      <weight>120</weight>
+    </entry>
+    <entry>
+      <value>4</value>
+      <weight>210</weight>
+    </entry>
+    <entry>
+      <value>5</value>
+      <weight>252</weight>
+    </entry>
+    <entry>
+      <value>6</value>
+      <weight>210</weight>
+    </entry>
+    <entry>
+      <value>7</value>
+      <weight>120</weight>
+    </entry>
+    <entry>
+      <value>8</value>
+      <weight>45</weight>
+    </entry>
+    <entry>
+      <value>9</value>
+      <weight>10</weight>
+    </entry>
+    <entry>
+      <value>10</value>
+      <weight>1</weight>
+    </entry>
+  </attack>
+  <defend type="integer-generator">
+    <entry>
+      <value>0</value>
+      <weight>64</weight>
+    </entry>
+    <entry>
+      <value>1</value>
+      <weight>192</weight>
+    </entry>
+    <entry>
+      <value>2</value>
+      <weight>240</weight>
+    </entry>
+    <entry>
+      <value>3</value>
+      <weight>160</weight>
+    </entry>
+    <entry>
+      <value>4</value>
+      <weight>60</weight>
+    </entry>
+    <entry>
+      <value>5</value>
+      <weight>12</weight>
+    </entry>
+    <entry>
+      <value>6</value>
+      <weight>1</weight>
+    </entry>
+  </defend>
+  <health type="integer">20</health>
+  <speed type="integer">8</speed>
+  <creature-count type="integer">1</creature-count>
+  <spawn-weight type="integer">0</spawn-weight>
+  <placement>DeadEnd</placement>
+  <number-of-attacks type="integer">1</number-of-attacks>
+  <special-attack>RedDragon</special-attack>
+  <necromancer-weight type="integer">0</necromancer-weight>
+  <summoner-weight type="integer">0</summoner-weight>
+  <hit-message>HitDragon</hit-message>
+  <miss-message>MissedDragon</miss-message>
+  <kill-message>KilledDragon</kill-message>
+  <hit-by-message>HitByDragon</hit-by-message>
+  <missed-by-message>MissedByDragon</missed-by-message>
+  <killed-by-message>KilledByDragon</killed-by-message>
+  <experience-points type="integer">20</experience-points>
+</creature>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<creature>
+  <mover type="CreatureMoveHandler"/>
+  <tags type="TagSet">
+    <tag>creature</tag>
+  </tags>
+  <imageUri>images/map/creatures/chaos/gargoyle.png</imageUri>
+  <identifier>gargoyle</identifier>
+  <name>gargoyle</name>
+  <moraleRoll type="BoolGenerator">
+    <entry>
+      <value>true</value>
+      <weight>1</weight>
+    </entry>
+  </moraleRoll>
+  <itemDrops type="StringGenerator">
+    <entry>
+      <value>Amethyst</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>TwoHandedSword</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value></value>
+      <weight>2</weight>
+    </entry>
+  </itemDrops>
+  <attack type="StatisticHolder">4</attack>
+  <attackRoll type="IntGenerator">
+    <entry>
+      <value>0</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>1</value>
+      <weight>4</weight>
+    </entry>
+    <entry>
+      <value>2</value>
+      <weight>6</weight>
+    </entry>
+    <entry>
+      <value>3</value>
+      <weight>4</weight>
+    </entry>
+    <entry>
+      <value>4</value>
+      <weight>1</weight>
+    </entry>
+  </attackRoll>
+  <defend type="StatisticHolder">5</defend>
+  <health type="StatisticHolder">3</health>
+  <speed type="StatisticHolder">6</speed>
+  <creatureCount>3</creatureCount>
+  <attackDie>3</attackDie>
+  <defendDie>2</defendDie>
+  <spawnWeight>1</spawnWeight>
+  <placement>DeadEnd</placement>
+  <numberOfAttacks>1</numberOfAttacks>
+  <specialAttack>None</specialAttack>
+  <necromancerWeight>0</necromancerWeight>
+  <summonerWeight>0</summonerWeight>
+  <hitMessage>HitGargoyle</hitMessage>
+  <missMessage>MissedGargoyle</missMessage>
+  <killMessage>KilledGargoyle</killMessage>
+  <hitByMessage>HitByGargoyle</hitByMessage>
+  <missedByMessage>MissedByGargoyle</missedByMessage>
+  <killedByMessage>KilledByGargoyle</killedByMessage>
+  <experiencePoints>3</experiencePoints>
+</creature>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<creature>
+  <mover type="CreatureMoveHandler"/>
+  <tags type="TagSet">
+    <tag>creature</tag>
+  </tags>
+  <imageUri>images/map/creatures/goblinoids/orc.png</imageUri>
+  <identifier>orc</identifier>
+  <name>ork</name>
+  <moraleRoll type="BoolGenerator">
+    <entry>
+      <value>true</value>
+      <weight>5</weight>
+    </entry>
+    <entry>
+      <value>false</value>
+      <weight>1</weight>
+    </entry>
+  </moraleRoll>
+  <itemDrops type="StringGenerator">
+    <entry>
+      <value>Torch</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>Shield</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>Silver</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>Copper</value>
+      <weight>2</weight>
+    </entry>
+    <entry>
+      <value>Dagger</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>Food</value>
+      <weight>2</weight>
+    </entry>
+    <entry>
+      <value></value>
+      <weight>8</weight>
+    </entry>
+  </itemDrops>
+  <attack type="StatisticHolder">3</attack>
+  <attackRoll type="IntGenerator">
+    <entry>
+      <value>0</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>1</value>
+      <weight>3</weight>
+    </entry>
+    <entry>
+      <value>2</value>
+      <weight>3</weight>
+    </entry>
+    <entry>
+      <value>3</value>
+      <weight>1</weight>
+    </entry>
+  </attackRoll>
+  <defend type="StatisticHolder">2</defend>
+  <health type="StatisticHolder">1</health>
+  <speed type="StatisticHolder">8</speed>
+  <creatureCount>24</creatureCount>
+  <attackDie>3</attackDie>
+  <defendDie>2</defendDie>
+  <spawnWeight>3</spawnWeight>
+  <placement>NonDeadEnd</placement>
+  <numberOfAttacks>1</numberOfAttacks>
+  <specialAttack>None</specialAttack>
+  <necromancerWeight>0</necromancerWeight>
+  <summonerWeight>20</summonerWeight>
+  <hitMessage>HitOrk</hitMessage>
+  <missMessage>MissedOrk</missMessage>
+  <killMessage>KilledOrk</killMessage>
+  <hitByMessage>HitByOrk</hitByMessage>
+  <missedByMessage>MissedByOrk</missedByMessage>
+  <killedByMessage>KilledByOrk</killedByMessage>
+  <experiencePoints>1</experiencePoints>
+</creature>

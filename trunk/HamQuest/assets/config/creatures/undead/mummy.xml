@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<creature>
+  <mover type="CreatureMoveHandler"/>
+  <tags type="TagSet">
+    <tag>creature</tag>
+  </tags>
+  <imageUri>images/map/creatures/undead/mummy.png</imageUri>
+  <identifier>mummy</identifier>
+  <name>mummy</name>
+  <moraleRoll type="BoolGenerator">
+    <entry>
+      <value>true</value>
+      <weight>1</weight>
+    </entry>
+  </moraleRoll>
+  <itemDrops type="StringGenerator">
+    <entry>
+      <value>Gold</value>
+      <weight>2</weight>
+    </entry>
+    <entry>
+      <value>Silver</value>
+      <weight>3</weight>
+    </entry>
+    <entry>
+      <value>Gemstone</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value></value>
+      <weight>6</weight>
+    </entry>
+  </itemDrops>
+  <attack type="StatisticHolder">3</attack>
+  <attackRoll type="IntGenerator">
+    <entry>
+      <value>0</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>1</value>
+      <weight>3</weight>
+    </entry>
+    <entry>
+      <value>2</value>
+      <weight>3</weight>
+    </entry>
+    <entry>
+      <value>3</value>
+      <weight>1</weight>
+    </entry>
+  </attackRoll>
+  <defend type="StatisticHolder">4</defend>
+  <health type="StatisticHolder">2</health>
+  <speed type="StatisticHolder">4</speed>
+  <creatureCount>8</creatureCount>
+  <attackDie>3</attackDie>
+  <defendDie>2</defendDie>
+  <spawnWeight>2</spawnWeight>
+  <placement>Either</placement>
+  <numberOfAttacks>1</numberOfAttacks>
+  <specialAttack>None</specialAttack>
+  <necromancerWeight>20</necromancerWeight>
+  <summonerWeight>0</summonerWeight>
+  <hitMessage>HitMummy</hitMessage>
+  <missMessage>MissedMummy</missMessage>
+  <killMessage>KilledMummy</killMessage>
+  <hitByMessage>HitByMummy</hitByMessage>
+  <missedByMessage>MissedByMummy</missedByMessage>
+  <killedByMessage>KilledByMummy</killedByMessage>
+  <experiencePoints>2</experiencePoints>
+</creature>

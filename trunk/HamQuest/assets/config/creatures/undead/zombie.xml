@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<creature>
+  <mover type="CreatureMoveHandler"/>
+  <tags type="TagSet">
+    <tag>creature</tag>
+  </tags>
+  <imageUri>images/map/creatures/undead/zombie.png</imageUri>
+  <identifier>zombie</identifier>
+  <name>zombie</name>
+  <moraleRoll type="BoolGenerator">
+    <entry>
+      <value>true</value>
+      <weight>1</weight>
+    </entry>
+  </moraleRoll>
+  <itemDrops type="StringGenerator">
+    <entry>
+      <value>Silver</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>Copper</value>
+      <weight>2</weight>
+    </entry>
+    <entry>
+      <value></value>
+      <weight>3</weight>
+    </entry>
+  </itemDrops>
+  <attack type="StatisticHolder">2</attack>
+  <attackRoll type="IntGenerator">
+    <entry>
+      <value>0</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>1</value>
+      <weight>2</weight>
+    </entry>
+    <entry>
+      <value>2</value>
+      <weight>1</weight>
+    </entry>
+  </attackRoll>
+  <defend type="StatisticHolder">3</defend>
+  <health type="StatisticHolder">1</health>
+  <speed type="StatisticHolder">5</speed>
+  <creatureCount>16</creatureCount>
+  <attackDie>3</attackDie>
+  <defendDie>2</defendDie>
+  <spawnWeight>3</spawnWeight>
+  <placement>NonDeadEnd</placement>
+  <numberOfAttacks>1</numberOfAttacks>
+  <specialAttack>None</specialAttack>
+  <necromancerWeight>40</necromancerWeight>
+  <summonerWeight>0</summonerWeight>
+  <hitMessage>HitZombie</hitMessage>
+  <missMessage>MissedZombie</missMessage>
+  <killMessage>KilledZombie</killMessage>
+  <hitByMessage>HitByZombie</hitByMessage>
+  <missedByMessage>MissedByZombie</missedByMessage>
+  <killedByMessage>KilledByZombie</killedByMessage>
+  <experiencePoints>1</experiencePoints>
+</creature>

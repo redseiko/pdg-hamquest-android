@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<creature>
+  <mover type="CreatureMoveHandler"/>
+  <tags type="TagSet">
+    <tag>creature</tag>
+  </tags>
+  <imageUri>images/map/creatures/chaos/warrior.png</imageUri>
+  <identifier>warrior</identifier>
+  <name>chaos warrior</name>
+  <moraleRoll type="BoolGenerator">
+    <entry>
+      <value>true</value>
+      <weight>1</weight>
+    </entry>
+  </moraleRoll>
+  <itemDrops type="StringGenerator">
+    <entry>
+      <value>MagicLantern</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>Platemail</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>Longsword</value>
+      <weight>2</weight>
+    </entry>
+    <entry>
+      <value>Potion</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value></value>
+      <weight>5</weight>
+    </entry>
+  </itemDrops>
+  <attack type="StatisticHolder">4</attack>
+  <attackRoll type="IntGenerator">
+    <entry>
+      <value>0</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>1</value>
+      <weight>4</weight>
+    </entry>
+    <entry>
+      <value>2</value>
+      <weight>6</weight>
+    </entry>
+    <entry>
+      <value>3</value>
+      <weight>4</weight>
+    </entry>
+    <entry>
+      <value>4</value>
+      <weight>1</weight>
+    </entry>
+  </attackRoll>
+  <defend type="StatisticHolder">4</defend>
+  <health type="StatisticHolder">3</health>
+  <speed type="StatisticHolder">7</speed>
+  <creatureCount>6</creatureCount>
+  <attackDie>3</attackDie>
+  <defendDie>2</defendDie>
+  <spawnWeight>2</spawnWeight>
+  <placement>DeadEnd</placement>
+  <numberOfAttacks>1</numberOfAttacks>
+  <specialAttack>None</specialAttack>
+  <necromancerWeight>0</necromancerWeight>
+  <summonerWeight>0</summonerWeight>
+  <hitMessage>HitChaosWarrior</hitMessage>
+  <missMessage>MissedChaosWarrior</missMessage>
+  <killMessage>KilledChaosWarrior</killMessage>
+  <hitByMessage>HitByChaosWarrior</hitByMessage>
+  <missedByMessage>MissedByChaosWarrior</missedByMessage>
+  <killedByMessage>KilledByChaosWarrior</killedByMessage>
+  <experiencePoints>3</experiencePoints>
+</creature>
