@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<item>
+  <initialInventory type="IntGenerator">
+    <entry>
+      <value>0</value>
+      <weight>1</weight>
+    </entry>
+  </initialInventory>
+  <inventoryColumn>-1</inventoryColumn>
+  <inventoryRow>-1</inventoryRow>
+  <placement>None</placement>
+  <itemCount>0</itemCount>
+  
+  <price>0</price>
+  <itemType>Door</itemType>
+</item>

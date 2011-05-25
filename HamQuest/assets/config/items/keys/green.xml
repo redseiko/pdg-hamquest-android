@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<item>
+  <tags type="TagSet">
+    <tag>key</tag>
+    <tag>item</tag>
+  </tags>
+  <spawnAs type="StringGenerator">
+    <entry>
+      <value>GreenKey</value>
+      <weight>1</weight>
+    </entry>
+  </spawnAs>
+  <imageUri>images/map/items/keys/green.png</imageUri>
+  <inventoryColumn>2</inventoryColumn>
+  <inventoryRow>3</inventoryRow>
+  <identifier>GreenKey</identifier>
+  <lockTypeWeight>8</lockTypeWeight>
+  <name>jade key</name>
+  <lockType>2</lockType>
+  <pickUpMessage>PickUpGreenKey</pickUpMessage>
+</item>

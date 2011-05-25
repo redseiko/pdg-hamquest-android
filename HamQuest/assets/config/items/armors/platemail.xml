@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<item>
+  <tags type="TagSet">
+    <tag>armor</tag>
+    <tag>item</tag>
+    <tag>durable</tag>
+  </tags>
+  <spawnAs type="StringGenerator">
+    <entry>
+      <value>Platemail</value>
+      <weight>1</weight>
+    </entry>
+  </spawnAs>
+  
+  <imageUri>images/map/items/armors/platemail.png</imageUri>
+  <initialInventory type="IntGenerator">
+    <entry>
+      <value>0</value>
+      <weight>1</weight>
+    </entry>
+  </initialInventory>
+  <inventoryColumn>3</inventoryColumn>
+  <inventoryRow>1</inventoryRow>
+
+  
+  
+  
+  <identifier>Platemail</identifier>
+  
+  <name>platemail</name>
+  <placement>DeadEnd</placement>
+  <itemCount>1</itemCount>
+  
+  <price>700</price>
+  <itemType>Armor</itemType>
+  <armorType>Torso</armorType>
+  <defendValue>2</defendValue>
+  <defendRoll type="IntGenerator">
+    <entry>
+      <value>0</value>
+      <weight>4</weight>
+    </entry>
+    <entry>
+      <value>1</value>
+      <weight>4</weight>
+    </entry>
+    <entry>
+      <value>2</value>
+      <weight>1</weight>
+    </entry>
+  </defendRoll>
+  <durability>15</durability>
+  <speedMultiplier>0.5</speedMultiplier>
+  <pickUpMessage>PickUpPlatemail</pickUpMessage>
+  <brokenMessage>BrokenPlatemail</brokenMessage>
+  
+  
+  
+  
+  <xGenerator type="IntGenerator">
+    <entry>
+      <value>1</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>2</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>3</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>4</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>5</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>6</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>7</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>8</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>9</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>10</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>11</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>12</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>13</value>
+      <weight>1</weight>
+    </entry>
+  </xGenerator>
+  <yGenerator type="IntGenerator">
+    <entry>
+      <value>1</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>2</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>3</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>4</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>5</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>6</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>7</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>8</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>9</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>10</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>11</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>12</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>13</value>
+      <weight>1</weight>
+    </entry>
+  </yGenerator>
+</item>

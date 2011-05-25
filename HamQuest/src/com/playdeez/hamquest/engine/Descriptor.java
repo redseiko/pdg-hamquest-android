@@ -45,8 +45,15 @@ public class Descriptor {
 	private static Descriptor loadDescriptorFromNode(Node theNode, AssetManager theAssetManager,GameConstants<Game> theGameConstants) throws ParserConfigurationException, IOException, SAXException{
 		Log.d("Descriptor","loadDescriptorFromNode");
 		List<PropertyValuePair> properties = PropertyValuePair.loadPropertyValuesFromXmlNode(theNode,theAssetManager,theGameConstants);
-		Descriptor descriptor = new Descriptor(properties);
-		return descriptor;	
+		Node typeAttributeNode = DomUtilities.getAttributeNode(theNode, theGameConstants.getTagNames().Type);
+		if(typeAttributeNode!=null){
+			if(typeAttributeNode.getNodeValue().compareTo(theGameConstants.getTypes().CreatureDescriptor)==0){
+				return new CreatureDescriptor(properties);
+			}else if(typeAttributeNode.getNodeValue().compareTo(theGameConstants.getTypes().PlayerDescriptor)==0){
+				return new PlayerDescriptor(properties);
+			}
+		}
+		return new Descriptor(properties);	
 	}
 	private static List<Descriptor> loadDescriptorsFromRootNode(Node theNode,AssetManager theAssetManager,GameConstants<Game> theGameConstants, String theDescriptorNodeName) throws ParserConfigurationException, IOException, SAXException{
 		List<Descriptor> result=new ArrayList<Descriptor>();

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<item>
+  <tags type="TagSet">
+    <tag>key</tag>
+    <tag>item</tag>
+  </tags>
+  <spawnAs type="StringGenerator">
+    <entry>
+      <value>RedKey</value>
+      <weight>1</weight>
+    </entry>
+  </spawnAs>
+  <imageUri>images/map/items/keys/red.png</imageUri>
+  <inventoryColumn>0</inventoryColumn>
+  <inventoryRow>3</inventoryRow>
+  <identifier>RedKey</identifier>
+  <lockTypeWeight>32</lockTypeWeight>
+  <name>carnelian key</name>
+  <lockType>0</lockType>
+  <pickUpMessage>PickUpRedKey</pickUpMessage>
+</item>

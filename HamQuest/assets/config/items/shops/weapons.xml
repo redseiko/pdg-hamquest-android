@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<item>
+  <tags type="TagSet">
+    <tag>shop</tag>
+  </tags>
+  <bumpMessage>CannotEnterShop</bumpMessage>
+  <spawnAs type="StringGenerator">
+    <entry>
+      <value>WeaponShop</value>
+      <weight>1</weight>
+    </entry>
+  </spawnAs>
+  
+  <imageUri>images/map/items/shops/weapons.png</imageUri>
+  <initialInventory type="IntGenerator">
+    <entry>
+      <value>0</value>
+      <weight>1</weight>
+    </entry>
+  </initialInventory>
+  <inventoryColumn>-1</inventoryColumn>
+  <inventoryRow>-1</inventoryRow>
+
+  
+  
+  
+  <identifier>WeaponShop</identifier>
+  <shopTitle>Ye Olde Weapon Smithy</shopTitle>
+  
+  <name>weapon shop</name>
+  <placement>DeadEnd</placement>
+  <itemCount>1</itemCount>
+  
+  <price>0</price>
+  <itemType>Shop</itemType>
+  <inventory type="ShopInventoryEntry">
+    <entry>
+      <itemIdentifier>Dagger</itemIdentifier>
+      <numberInStock>8</numberInStock>
+      <numberInStockRoll>4</numberInStockRoll>
+      <numberInStockDie>6</numberInStockDie>
+    </entry>
+    <entry>
+      <itemIdentifier>Shortsword</itemIdentifier>
+      <numberInStock>8</numberInStock>
+      <numberInStockRoll>3</numberInStockRoll>
+      <numberInStockDie>6</numberInStockDie>
+    </entry>
+    <entry>
+      <itemIdentifier>Longsword</itemIdentifier>
+      <numberInStock>4</numberInStock>
+      <numberInStockRoll>2</numberInStockRoll>
+      <numberInStockDie>6</numberInStockDie>
+    </entry>
+    <entry>
+      <itemIdentifier>TwoHandedSword</itemIdentifier>
+      <numberInStock>2</numberInStock>
+      <numberInStockRoll>1</numberInStockRoll>
+      <numberInStockDie>6</numberInStockDie>
+    </entry>
+  </inventory>
+  
+  
+  
+  
+  <xGenerator type="IntGenerator">
+    <entry>
+      <value>2</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>3</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>4</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>5</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>6</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>7</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>8</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>9</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>10</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>11</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>12</value>
+      <weight>1</weight>
+    </entry>
+  </xGenerator>
+  <yGenerator type="IntGenerator">
+    <entry>
+      <value>2</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>3</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>4</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>5</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>6</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>7</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>8</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>9</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>10</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>11</value>
+      <weight>1</weight>
+    </entry>
+    <entry>
+      <value>12</value>
+      <weight>1</weight>
+    </entry>
+  </yGenerator>
+</item>

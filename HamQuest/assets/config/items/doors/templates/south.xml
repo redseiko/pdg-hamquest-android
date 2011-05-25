@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<item>
+  <direction>2</direction>
+  
+  
+  
+  
+  <xGenerator type="IntGenerator">
+    <entry>
+      <value>7</value>
+      <weight>1</weight>
+    </entry>
+  </xGenerator>
+  <yGenerator type="IntGenerator">
+    <entry>
+      <value>14</value>
+      <weight>1</weight>
+    </entry>
+  </yGenerator>
+</item>
