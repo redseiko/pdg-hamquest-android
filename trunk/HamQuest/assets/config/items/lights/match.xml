@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <item>
-  <tags type="TagSet">
+  <tags type="tag-set">
     <tag>light</tag>
     <tag>item</tag>
   </tags>
-  <spawnAs type="StringGenerator">
+  <spawn-as type="string-generator">
     <entry>
       <value>Match</value>
       <weight>1</weight>
     </entry>
-  </spawnAs>
+  </spawn-as>
   
   <imageLightRadiusUri>images/lights/match.png</imageLightRadiusUri>
-  <imageUri>images/map/misc/blank.png</imageUri>
-  <initialInventory type="IntGenerator">
+  <image-path>images/map/misc/blank.png</image-path>
+  <initial-inventory type="integer-generator">
     <entry>
       <value>1</value>
       <weight>1</weight>
     </entry>
-  </initialInventory>
-  <inventoryColumn>-1</inventoryColumn>
-  <inventoryRow>-1</inventoryRow>
+  </initial-inventory>
+  <inventory-column type="integer">-1</inventory-column>
+  <inventory-row type="integer">-1</inventory-row>
 
   
   
@@ -28,20 +28,20 @@
   <identifier>Match</identifier>
   <name>match</name>
   <placement>None</placement>
-  <itemCount>0</itemCount>
+  <item-count type="integer">0</item-count>
   
-  <price>0</price>
-  <itemType>Light</itemType>
+  <price type="integer">0</price>
+  <item-type>Light</item-type>
   <duration>0</duration>
   <lightLevel>0</lightLevel>
   
-  <pickUpMessage></pickUpMessage>
+  <pick-up-message></pick-up-message>
   <goOutMessage></goOutMessage>
   
   
   
   
-  <xGenerator type="IntGenerator">
+  <x-generator type="integer-generator">
     <entry>
       <value>1</value>
       <weight>1</weight>
@@ -94,8 +94,8 @@
       <value>13</value>
       <weight>1</weight>
     </entry>
-  </xGenerator>
-  <yGenerator type="IntGenerator">
+  </x-generator>
+  <y-generator type="integer-generator">
     <entry>
       <value>1</value>
       <weight>1</weight>
@@ -148,5 +148,5 @@
       <value>13</value>
       <weight>1</weight>
     </entry>
-  </yGenerator>
+  </y-generator>
 </item>

@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <item>
-  <tags type="TagSet">
+  <tags type="tag-set">
     <tag>key</tag>
     <tag>item</tag>
   </tags>
-  <spawnAs type="StringGenerator">
+  <spawn-as type="string-generator">
     <entry>
       <value>BlueKey</value>
       <weight>1</weight>
     </entry>
-  </spawnAs>
-  <imageUri>images/map/items/keys/blue.png</imageUri>
-  <inventoryColumn>1</inventoryColumn>
-  <inventoryRow>4</inventoryRow>
+  </spawn-as>
+  <image-path>images/map/items/keys/blue.png</image-path>
+  <inventory-column type="integer">1</inventory-column>
+  <inventory-row type="integer">4</inventory-row>
   <identifier>BlueKey</identifier>
   <lockTypeWeight>2</lockTypeWeight>
   <name>sapphire key</name>
   <lockType>4</lockType>
-  <pickUpMessage>PickUpBlueKey</pickUpMessage>
+  <pick-up-message>PickUpBlueKey</pick-up-message>
 </item>

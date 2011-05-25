@@ -1,35 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <item>
-  <tags type="TagSet">
+  <tags type="tag-set">
     <tag>armor</tag>
     <tag>item</tag>
     <tag>durable</tag>
   </tags>
-  <spawnAs type="StringGenerator">
+  <spawn-as type="string-generator">
     <entry>
       <value>Shield</value>
       <weight>1</weight>
     </entry>
-  </spawnAs>
-  
-  <imageUri>images/map/items/armors/shield.png</imageUri>
-  <initialInventory type="IntGenerator">
+  </spawn-as>
+  <image-path>images/map/items/armors/shield.png</image-path>
+  <initial-inventory type="integer-generator">
     <entry>
       <value>0</value>
       <weight>1</weight>
     </entry>
-  </initialInventory>
-  <inventoryColumn>0</inventoryColumn>
-  <inventoryRow>1</inventoryRow>
+  </initial-inventory>
+  <inventory-column type="integer">0</inventory-column>
+  <inventory-row type="integer">1</inventory-row>
   <identifier>Shield</identifier>
   <name>shield</name>
   <placement>Either</placement>
-  <itemCount>2</itemCount>
-  <price>150</price>
-  <itemType>Armor</itemType>
-  <armorType>Shield</armorType>
-  <defendValue>1</defendValue>
-  <defendRoll type="IntGenerator">
+  <item-count type="integer">2</item-count>
+  <price type="integer">150</price>
+  <item-type>Armor</item-type>
+  <armor-type>Shield</armor-type>
+  <defend type="integer-generator">
     <entry>
       <value>0</value>
       <weight>2</weight>
@@ -38,12 +36,12 @@
       <value>1</value>
       <weight>1</weight>
     </entry>
-  </defendRoll>
-  <durability>5</durability>
-  <speedMultiplier>1.0</speedMultiplier>
-  <pickUpMessage>PickUpShield</pickUpMessage>
-  <brokenMessage>BrokenShield</brokenMessage>
-  <xGenerator type="IntGenerator">
+  </defend>
+  <durability type="integer">5</durability>
+  <speed-multiplier type="double">1.0</speed-multiplier>
+  <pick-up-message>PickUpShield</pick-up-message>
+  <broken-message>BrokenShield</broken-message>
+  <x-generator type="integer-generator">
     <entry>
       <value>1</value>
       <weight>1</weight>
@@ -96,8 +94,8 @@
       <value>13</value>
       <weight>1</weight>
     </entry>
-  </xGenerator>
-  <yGenerator type="IntGenerator">
+  </x-generator>
+  <y-generator type="integer-generator">
     <entry>
       <value>1</value>
       <weight>1</weight>
@@ -150,5 +148,5 @@
       <value>13</value>
       <weight>1</weight>
     </entry>
-  </yGenerator>
+  </y-generator>
 </item>

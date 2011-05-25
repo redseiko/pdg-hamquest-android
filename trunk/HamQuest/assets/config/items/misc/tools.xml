@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <item>
-  <tags type="TagSet">
+  <tags type="tag-set">
     <tag>tools</tag>
     <tag>item</tag>
   </tags>
-  <spawnAs type="StringGenerator">
+  <spawn-as type="string-generator">
     <entry>
       <value>Tools</value>
       <weight>1</weight>
     </entry>
-  </spawnAs>
+  </spawn-as>
   
-  <imageUri>images/map/items/misc/tools.png</imageUri>
-  <initialInventory type="IntGenerator">
+  <image-path>images/map/items/misc/tools.png</image-path>
+  <initial-inventory type="integer-generator">
     <entry>
       <value>0</value>
       <weight>1</weight>
     </entry>
-  </initialInventory>
-  <inventoryColumn>3</inventoryColumn>
-  <inventoryRow>4</inventoryRow>
+  </initial-inventory>
+  <inventory-column type="integer">3</inventory-column>
+  <inventory-row type="integer">4</inventory-row>
 
   
   
@@ -28,19 +28,19 @@
   
   <name>thieves' tools</name>
   <placement>Either</placement>
-  <itemCount>32</itemCount>
+  <item-count type="integer">32</item-count>
   
-  <price>0</price>
+  <price type="integer">0</price>
   <attackValue>0</attackValue>
-  <durability>0</durability>
+  <durability type="integer">0</durability>
   <twoHanded>True</twoHanded>
-  <itemType>Tools</itemType>
-  <pickUpMessage>PickUpTools</pickUpMessage>
+  <item-type>Tools</item-type>
+  <pick-up-message>PickUpTools</pick-up-message>
   
   
   
   
-  <xGenerator type="IntGenerator">
+  <x-generator type="integer-generator">
     <entry>
       <value>1</value>
       <weight>1</weight>
@@ -93,8 +93,8 @@
       <value>13</value>
       <weight>1</weight>
     </entry>
-  </xGenerator>
-  <yGenerator type="IntGenerator">
+  </x-generator>
+  <y-generator type="integer-generator">
     <entry>
       <value>1</value>
       <weight>1</weight>
@@ -147,5 +147,5 @@
       <value>13</value>
       <weight>1</weight>
     </entry>
-  </yGenerator>
+  </y-generator>
 </item>

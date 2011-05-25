@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <item>
-  <tags type="TagSet">
+  <tags type="tag-set">
     <tag>door</tag>
   </tags>
-  <spawnAs type="StringGenerator">
+  <spawn-as type="string-generator">
     <entry>
       <value>RedDoorNorth</value>
       <weight>1</weight>
     </entry>
-  </spawnAs>
+  </spawn-as>
   
-  <imageUri>images/map/items/doors/red/north.png</imageUri>
+  <image-path>images/map/items/doors/red/north.png</image-path>
 
   
   

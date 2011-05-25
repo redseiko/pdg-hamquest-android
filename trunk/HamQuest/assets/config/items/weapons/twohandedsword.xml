@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <item>
-  <tags type="TagSet">
+  <tags type="tag-set">
     <tag>weapon</tag>
     <tag>item</tag>
     <tag>durable</tag>
   </tags>
-  <spawnAs type="StringGenerator">
+  <spawn-as type="string-generator">
     <entry>
       <value>TwoHandedSword</value>
       <weight>1</weight>
     </entry>
-  </spawnAs>
+  </spawn-as>
   
-  <imageUri>images/map/items/weapons/twohandedsword.png</imageUri>
-  <initialInventory type="IntGenerator">
+  <image-path>images/map/items/weapons/twohandedsword.png</image-path>
+  <initial-inventory type="integer-generator">
     <entry>
       <value>0</value>
       <weight>1</weight>
     </entry>
-  </initialInventory>
-  <inventoryColumn>3</inventoryColumn>
-  <inventoryRow>0</inventoryRow>
+  </initial-inventory>
+  <inventory-column type="integer">3</inventory-column>
+  <inventory-row type="integer">0</inventory-row>
 
   
   
@@ -29,20 +29,20 @@
   
   <name>two-handed sword</name>
   <placement>Either</placement>
-  <itemCount>1</itemCount>
+  <item-count type="integer">1</item-count>
   
-  <price>1000</price>
+  <price type="integer">1000</price>
   <attackValue>4</attackValue>
-  <durability>100</durability>
+  <durability type="integer">100</durability>
   <twoHanded>True</twoHanded>
-  <itemType>Weapon</itemType>
-  <pickUpMessage>PickUpTwoHandedSword</pickUpMessage>
-  <brokenMessage>BrokenTwoHandedSword</brokenMessage>
+  <item-type>Weapon</item-type>
+  <pick-up-message>PickUpTwoHandedSword</pick-up-message>
+  <broken-message>BrokenTwoHandedSword</broken-message>
   
   
   
   
-  <xGenerator type="IntGenerator">
+  <x-generator type="integer-generator">
     <entry>
       <value>1</value>
       <weight>1</weight>
@@ -95,8 +95,8 @@
       <value>13</value>
       <weight>1</weight>
     </entry>
-  </xGenerator>
-  <yGenerator type="IntGenerator">
+  </x-generator>
+  <y-generator type="integer-generator">
     <entry>
       <value>1</value>
       <weight>1</weight>
@@ -149,5 +149,5 @@
       <value>13</value>
       <weight>1</weight>
     </entry>
-  </yGenerator>
+  </y-generator>
 </item>

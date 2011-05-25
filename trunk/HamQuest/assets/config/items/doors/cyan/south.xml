@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <item>
-  <tags type="TagSet">
+  <tags type="tag-set">
     <tag>door</tag>
   </tags>
-  <spawnAs type="StringGenerator">
+  <spawn-as type="string-generator">
     <entry>
       <value>CyanDoorSouth</value>
       <weight>1</weight>
     </entry>
-  </spawnAs>
-  <imageUri>images/map/items/doors/cyan/south.png</imageUri>
+  </spawn-as>
+  <image-path>images/map/items/doors/cyan/south.png</image-path>
   <identifier>CyanDoorSouth</identifier>
   <name>aquamarine door</name>
 </item>

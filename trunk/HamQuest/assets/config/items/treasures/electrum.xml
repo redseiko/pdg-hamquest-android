@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <item>
-  <tags type="TagSet">
+  <tags type="tag-set">
     <tag>treasure</tag>
     <tag>item</tag>
   </tags>
-  <spawnAs type="StringGenerator">
+  <spawn-as type="string-generator">
     <entry>
       <value>Electrum</value>
       <weight>1</weight>
     </entry>
-  </spawnAs>
+  </spawn-as>
   
-  <imageUri>images/map/items/treasures/electrum.png</imageUri>
-  <initialInventory type="IntGenerator">
+  <image-path>images/map/items/treasures/electrum.png</image-path>
+  <initial-inventory type="integer-generator">
     <entry>
       <value>0</value>
       <weight>1</weight>
     </entry>
-  </initialInventory>
-  <inventoryColumn>-1</inventoryColumn>
-  <inventoryRow>-1</inventoryRow>
+  </initial-inventory>
+  <inventory-column type="integer">-1</inventory-column>
+  <inventory-row type="integer">-1</inventory-row>
 
   
   
@@ -28,18 +28,18 @@
   
   <name>pile of electrum pieces</name>
   <placement>Either</placement>
-  <itemCount>16</itemCount>
+  <item-count type="integer">16</item-count>
   
-  <price>0</price>
+  <price type="integer">0</price>
   <minimumValue>51</minimumValue>
   <maximumValue>100</maximumValue>
-  <itemType>Treasure</itemType>
-  <pickUpMessage>PickUpElectrum</pickUpMessage>
+  <item-type>Treasure</item-type>
+  <pick-up-message>PickUpElectrum</pick-up-message>
   
   
   
   
-  <xGenerator type="IntGenerator">
+  <x-generator type="integer-generator">
     <entry>
       <value>1</value>
       <weight>1</weight>
@@ -92,8 +92,8 @@
       <value>13</value>
       <weight>1</weight>
     </entry>
-  </xGenerator>
-  <yGenerator type="IntGenerator">
+  </x-generator>
+  <y-generator type="integer-generator">
     <entry>
       <value>1</value>
       <weight>1</weight>
@@ -146,5 +146,5 @@
       <value>13</value>
       <weight>1</weight>
     </entry>
-  </yGenerator>
+  </y-generator>
 </item>

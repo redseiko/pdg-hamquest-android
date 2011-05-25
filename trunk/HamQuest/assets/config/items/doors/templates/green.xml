@@ -7,6 +7,6 @@
     </entry>
   </itemUnlocks>
   <lockType>2</lockType>
-  <pickUpMessage>UnlockGreenDoor</pickUpMessage>
+  <pick-up-message>UnlockGreenDoor</pick-up-message>
   <bumpMessage>BumpGreenDoor</bumpMessage>
 </item>
