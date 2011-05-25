@@ -5,5 +5,7 @@
     <property-groups>config/default/propertyGroups.xml</property-groups>
     <messages>config/default/messages.xml</messages>
     <terrains>config/default/terrains.xml</terrains>
+    <creatures>config/default/creatures.xml</creatures>
+    <items>config/default/items.xml</items>
   </theme>
 </themes>

@@ -11,6 +11,9 @@ public final class GameConstants<T> implements INestedObject<T> {
 		return assetLocations;
 	}
 	public final class TagNames {
+		public final String Creature = "creature";
+		public final String Creatures = "creatures";
+		public final String Entry = "entry";
 		public final String Identifier = "identifier";
 		public final String Message = "message";
 		public final String Messages = "messages";
@@ -28,6 +31,8 @@ public final class GameConstants<T> implements INestedObject<T> {
 		public final String TutorialImagePath = "tutorial-image-path";
 		public final String TutorialTitleText = "tutorial-title-text";
 		public final String Type = "type";
+		public final String Value = "value";
+		public final String Weight = "weight";
 	}
 	private TagNames tagNames = new TagNames();
 	public TagNames getTagNames(){
@@ -39,6 +44,11 @@ public final class GameConstants<T> implements INestedObject<T> {
 		public final String Double = "double";
 		public final String Boolean = "boolean";
 		public final String TagSet = "tag-set";
+		public final String CreatureDescriptor = "creature-descriptor";
+		public final String PlayerDescriptor = "player-descriptor";
+		public final String BooleanGenerator = "boolean-generator";
+		public final String IntegerGenerator = "integer-generator";
+		public final String StringGenerator = "string-generator";
 	}
 	private Types types = new Types();
 	public Types getTypes(){

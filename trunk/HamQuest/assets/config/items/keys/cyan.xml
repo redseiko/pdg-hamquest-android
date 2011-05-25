@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<item>
+  <tags type="TagSet">
+    <tag>key</tag>
+    <tag>item</tag>
+  </tags>
+  <spawnAs type="StringGenerator">
+    <entry>
+      <value>CyanKey</value>
+      <weight>1</weight>
+    </entry>
+  </spawnAs>
+  <imageUri>images/map/items/keys/cyan.png</imageUri>
+  <inventoryColumn>0</inventoryColumn>
+  <inventoryRow>4</inventoryRow>
+  <identifier>CyanKey</identifier>
+  <lockTypeWeight>4</lockTypeWeight>
+  <name>aquamarine key</name>
+  <lockType>3</lockType>
+  <pickUpMessage>PickUpCyanKey</pickUpMessage>
+</item>

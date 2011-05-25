@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<item>
+  <tags type="TagSet">
+    <tag>door</tag>
+  </tags>
+  <spawnAs type="StringGenerator">
+    <entry>
+      <value>BlueDoorNorth</value>
+      <weight>1</weight>
+    </entry>
+  </spawnAs>
+  <imageUri>images/map/items/doors/blue/north.png</imageUri>
+  <identifier>BlueDoorNorth</identifier>
+  <name>sapphire door</name>
+</item>

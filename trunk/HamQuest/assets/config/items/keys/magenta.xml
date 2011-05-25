@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<item>
+  <tags type="TagSet">
+    <tag>key</tag>
+    <tag>item</tag>
+  </tags>
+  <spawnAs type="StringGenerator">
+    <entry>
+      <value>MagentaKey</value>
+      <weight>1</weight>
+    </entry>
+  </spawnAs>
+  <imageUri>images/map/items/keys/magenta.png</imageUri>
+  <inventoryColumn>2</inventoryColumn>
+  <inventoryRow>4</inventoryRow>
+  <identifier>MagentaKey</identifier>
+  <lockTypeWeight>1</lockTypeWeight>
+  <name>amethyst key</name>
+  <lockType>5</lockType>
+  <pickUpMessage>PickUpMagentaKey</pickUpMessage>
+</item>

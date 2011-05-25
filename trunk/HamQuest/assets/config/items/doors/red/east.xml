@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<item>
+  <tags type="TagSet">
+    <tag>door</tag>
+  </tags>
+  <spawnAs type="StringGenerator">
+    <entry>
+      <value>RedDoorEast</value>
+      <weight>1</weight>
+    </entry>
+  </spawnAs>
+  <imageUri>images/map/items/doors/red/east.png</imageUri>
+  <identifier>RedDoorEast</identifier>
+  <name>carnelian door</name>
+</item>
