@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <item>
-  <initialInventory type="IntGenerator">
+  <initial-inventory type="integer-generator">
     <entry>
       <value>0</value>
       <weight>1</weight>
     </entry>
-  </initialInventory>
-  <inventoryColumn>-1</inventoryColumn>
-  <inventoryRow>-1</inventoryRow>
+  </initial-inventory>
+  <inventory-column type="integer">-1</inventory-column>
+  <inventory-row type="integer">-1</inventory-row>
   <placement>None</placement>
-  <itemCount>0</itemCount>
+  <item-count type="integer">0</item-count>
   
-  <price>0</price>
-  <itemType>Door</itemType>
+  <price type="integer">0</price>
+  <item-type>Door</item-type>
 </item>

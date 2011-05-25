@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <item>
-  <initialInventory type="IntGenerator">
+  <initial-inventory type="integer-generator">
     <entry>
       <value>0</value>
       <weight>1</weight>
     </entry>
-  </initialInventory>
+  </initial-inventory>
   <placement>NonDeadEnd</placement>
-  <itemCount>0</itemCount>
+  <item-count type="integer">0</item-count>
   
-  <price>0</price>
-  <itemType>Key</itemType>
-  <xGenerator type="IntGenerator">
+  <price type="integer">0</price>
+  <item-type>Key</item-type>
+  <x-generator type="integer-generator">
     <entry>
       <value>1</value>
       <weight>1</weight>
@@ -64,8 +64,8 @@
       <value>13</value>
       <weight>1</weight>
     </entry>
-  </xGenerator>
-  <yGenerator type="IntGenerator">
+  </x-generator>
+  <y-generator type="integer-generator">
     <entry>
       <value>1</value>
       <weight>1</weight>
@@ -118,6 +118,6 @@
       <value>13</value>
       <weight>1</weight>
     </entry>
-  </yGenerator>
+  </y-generator>
 </item>
 

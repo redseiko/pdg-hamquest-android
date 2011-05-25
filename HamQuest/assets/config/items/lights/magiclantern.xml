@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <item>
-  <tags type="TagSet">
+  <tags type="tag-set">
     <tag>light</tag>
     <tag>item</tag>
   </tags>
-  <spawnAs type="StringGenerator">
+  <spawn-as type="string-generator">
     <entry>
       <value>MagicLantern</value>
       <weight>1</weight>
     </entry>
-  </spawnAs>
+  </spawn-as>
   
   <imageLightRadiusUri>images/lights/magiclantern.png</imageLightRadiusUri>
-  <imageUri>images/map/items/lights/magiclantern.png</imageUri>
-  <inventoryColumn>2</inventoryColumn>
-  <initialInventory type="IntGenerator">
+  <image-path>images/map/items/lights/magiclantern.png</image-path>
+  <inventory-column type="integer">2</inventory-column>
+  <initial-inventory type="integer-generator">
     <entry>
       <value>0</value>
       <weight>1</weight>
     </entry>
-  </initialInventory>
-  <inventoryRow>2</inventoryRow>
+  </initial-inventory>
+  <inventory-row type="integer">2</inventory-row>
 
   
   
@@ -28,20 +28,20 @@
   <identifier>MagicLantern</identifier>
   <name>magic lantern</name>
   <placement>DeadEnd</placement>
-  <itemCount>4</itemCount>
+  <item-count type="integer">4</item-count>
   
-  <price>750</price>
-  <itemType>Light</itemType>
+  <price type="integer">750</price>
+  <item-type>Light</item-type>
   <duration>100</duration>
   <lightLevel>3</lightLevel>
   
-  <pickUpMessage>PickUpMagicLantern</pickUpMessage>
+  <pick-up-message>PickUpMagicLantern</pick-up-message>
   <goOutMessage>GoOutMagicLantern</goOutMessage>
   
   
   
   
-  <xGenerator type="IntGenerator">
+  <x-generator type="integer-generator">
     <entry>
       <value>1</value>
       <weight>1</weight>
@@ -94,8 +94,8 @@
       <value>13</value>
       <weight>1</weight>
     </entry>
-  </xGenerator>
-  <yGenerator type="IntGenerator">
+  </x-generator>
+  <y-generator type="integer-generator">
     <entry>
       <value>1</value>
       <weight>1</weight>
@@ -148,5 +148,5 @@
       <value>13</value>
       <weight>1</weight>
     </entry>
-  </yGenerator>
+  </y-generator>
 </item>

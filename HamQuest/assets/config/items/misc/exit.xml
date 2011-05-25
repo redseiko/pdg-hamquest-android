@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <item>
-  <tags type="TagSet">
+  <tags type="tag-set">
     <tag>exit</tag>
   </tags>
-  <spawnAs type="StringGenerator">
+  <spawn-as type="string-generator">
     <entry>
       <value>Exit</value>
       <weight>1</weight>
     </entry>
-  </spawnAs>
+  </spawn-as>
   
-  <imageUri>images/map/items/misc/exit.png</imageUri>
-  <initialInventory type="IntGenerator">
+  <image-path>images/map/items/misc/exit.png</image-path>
+  <initial-inventory type="integer-generator">
     <entry>
       <value>0</value>
       <weight>1</weight>
     </entry>
-  </initialInventory>
-  <inventoryColumn>-1</inventoryColumn>
-  <inventoryRow>-1</inventoryRow>
+  </initial-inventory>
+  <inventory-column type="integer">-1</inventory-column>
+  <inventory-row type="integer">-1</inventory-row>
 
   
   
@@ -27,17 +27,17 @@
   
   <name>exit</name>
   <placement>DeadEnd</placement>
-  <itemCount>1</itemCount>
+  <item-count type="integer">1</item-count>
   
-  <price>0</price>
-  <itemType>Exit</itemType>
-  <pickUpMessage>PickUpExit</pickUpMessage>
+  <price type="integer">0</price>
+  <item-type>Exit</item-type>
+  <pick-up-message>PickUpExit</pick-up-message>
   <bumpMessage>BumpBlueDoor</bumpMessage>
   
   
   
   
-  <xGenerator type="IntGenerator">
+  <x-generator type="integer-generator">
     <entry>
       <value>2</value>
       <weight>1</weight>
@@ -82,8 +82,8 @@
       <value>12</value>
       <weight>1</weight>
     </entry>
-  </xGenerator>
-  <yGenerator type="IntGenerator">
+  </x-generator>
+  <y-generator type="integer-generator">
     <entry>
       <value>2</value>
       <weight>1</weight>
@@ -128,5 +128,5 @@
       <value>12</value>
       <weight>1</weight>
     </entry>
-  </yGenerator>
+  </y-generator>
 </item>

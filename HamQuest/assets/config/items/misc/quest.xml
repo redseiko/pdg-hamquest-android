@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <item>
-  <tags type="TagSet">
+  <tags type="tag-set">
     <tag>quest</tag>
     <tag>item</tag>
   </tags>
-  <spawnAs type="StringGenerator">
+  <spawn-as type="string-generator">
     <entry>
       <value>Quest</value>
       <weight>1</weight>
     </entry>
-  </spawnAs>
+  </spawn-as>
   
-  <imageUri>images/map/items/misc/chest.png</imageUri>
-  <initialInventory type="IntGenerator">
+  <image-path>images/map/items/misc/chest.png</image-path>
+  <initial-inventory type="integer-generator">
     <entry>
       <value>0</value>
       <weight>1</weight>
     </entry>
-  </initialInventory>
-  <inventoryColumn>-1</inventoryColumn>
-  <inventoryRow>-1</inventoryRow>
+  </initial-inventory>
+  <inventory-column type="integer">-1</inventory-column>
+  <inventory-row type="integer">-1</inventory-row>
 
   
   
@@ -29,16 +29,16 @@
   
   <name>piece of megaham</name>
   <placement>DeadEnd</placement>
-  <itemCount>16</itemCount>
+  <item-count type="integer">16</item-count>
   
-  <price>0</price>
-  <itemType>Quest</itemType>
-  
-  
+  <price type="integer">0</price>
+  <item-type>Quest</item-type>
   
   
-  <pickUpMessage>PickUpQuest</pickUpMessage>
-  <xGenerator type="IntGenerator">
+  
+  
+  <pick-up-message>PickUpQuest</pick-up-message>
+  <x-generator type="integer-generator">
     <entry>
       <value>1</value>
       <weight>1</weight>
@@ -91,8 +91,8 @@
       <value>13</value>
       <weight>1</weight>
     </entry>
-  </xGenerator>
-  <yGenerator type="IntGenerator">
+  </x-generator>
+  <y-generator type="integer-generator">
     <entry>
       <value>1</value>
       <weight>1</weight>
@@ -145,5 +145,5 @@
       <value>13</value>
       <weight>1</weight>
     </entry>
-  </yGenerator>
+  </y-generator>
 </item>
