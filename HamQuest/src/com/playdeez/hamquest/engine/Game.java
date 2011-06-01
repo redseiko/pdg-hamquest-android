@@ -31,12 +31,17 @@ public class Game {
 	public DescriptorTable getCreaturesTable(){
 		return creaturesTable;
 	}
+	private DescriptorTable itemsTable;
+	public DescriptorTable getItemsTable(){
+		return itemsTable;
+	}
 	public void loadTablesForTheme(AssetManager theAssetManager){
 		Descriptor themeDescriptor = themeTable.getDescriptor(getTheme());
 		propertyGroupsTable = new DescriptorTable(this,themeDescriptor.<String>getProperty(getGameConstants().getTagNames().PropertyGroups),theAssetManager, getGameConstants().getTagNames().PropertyGroups, getGameConstants().getTagNames().PropertyGroup);
 		messagesTable = new DescriptorTable(this,themeDescriptor.<String>getProperty(getGameConstants().getTagNames().Messages),theAssetManager, getGameConstants().getTagNames().Messages, getGameConstants().getTagNames().Message);
 		terrainsTable = new DescriptorTable(this,themeDescriptor.<String>getProperty(getGameConstants().getTagNames().Terrains),theAssetManager, getGameConstants().getTagNames().Terrains, getGameConstants().getTagNames().Terrain);
 		creaturesTable = new DescriptorTable(this,themeDescriptor.<String>getProperty(getGameConstants().getTagNames().Creatures),theAssetManager, getGameConstants().getTagNames().Creatures, getGameConstants().getTagNames().Creature);
+		itemsTable = new DescriptorTable(this,themeDescriptor.<String>getProperty(getGameConstants().getTagNames().Items),theAssetManager, getGameConstants().getTagNames().Items, getGameConstants().getTagNames().Item);
 	}
 	public Game(AssetManager theAssetManager){
 		gameConstants = new GameConstants<Game>(this);

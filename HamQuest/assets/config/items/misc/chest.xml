@@ -10,7 +10,7 @@
       <weight>1</weight>
     </entry>
   </spawn-as>
-  <generatedItem type="string-generator">
+  <generated-item type="string-generator">
     <entry>
       <value>Boots</value>
       <weight>2</weight>
@@ -123,7 +123,7 @@
       <value>TwoHandedSword</value>
       <weight>1</weight>
     </entry>
-  </generatedItem>
+  </generated-item>
   <image-path>images/map/items/misc/chest.png</image-path>
   <initial-inventory type="integer-generator">
     <entry>
