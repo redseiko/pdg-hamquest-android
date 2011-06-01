@@ -15,6 +15,8 @@ public final class GameConstants<T> implements INestedObject<T> {
 		public final String Creatures = "creatures";
 		public final String Entry = "entry";
 		public final String Identifier = "identifier";
+		public final String Item = "item";
+		public final String Items = "items";
 		public final String Message = "message";
 		public final String Messages = "messages";
 		public final String PropertyGroup = "property-group";
@@ -53,6 +55,14 @@ public final class GameConstants<T> implements INestedObject<T> {
 	private Types types = new Types();
 	public Types getTypes(){
 		return types;
+	}
+	public final class Maze{
+		public final Integer Width = 8;
+		public final Integer Height = 8;
+	}
+	private Maze maze = new Maze();
+	public Maze getMaze(){
+		return maze;
 	}
 	private T parent;
 	public T getParent() {
